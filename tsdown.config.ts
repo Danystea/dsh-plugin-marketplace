@@ -10,14 +10,16 @@ export default defineConfig({
   clean: true,
   outDir: 'lib',
   platform: 'browser',
-  external: [
-    '@deepseek-ai/cordis',
-    '@deepseek-ai/dsh-client-locale',
-    '@deepseek-ai/dsh-client-runtime',
-    '@deepseek-ai/dsh-client-ui-primitives',
-    '@deepseek-ai/dsh-client-ui-settings',
-    '@deepseek-ai/dsh-client-ui-slots',
-    'react',
-    'react/jsx-runtime',
-  ],
+  deps: {
+    neverBundle: [
+      '@deepseek-ai/cordis',
+      '@deepseek-ai/dsh-client-locale',
+      '@deepseek-ai/dsh-client-runtime',
+      '@deepseek-ai/dsh-client-ui-primitives',
+      '@deepseek-ai/dsh-client-ui-settings',
+      '@deepseek-ai/dsh-client-ui-slots',
+      'react',
+      'react/jsx-runtime',
+    ],
+  },
 })

@@ -1,0 +1,182 @@
+.KwMa_G_section {
+  padding: 0 0 24px;
+}
+
+.KwMa_G_title {
+  color: var(--dsw-text-primary);
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.KwMa_G_intro {
+  color: var(--dsw-text-secondary);
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.KwMa_G_categories {
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.KwMa_G_search {
+  border: 1px solid var(--dsw-border-default);
+  background: var(--dsw-bg-secondary);
+  color: var(--dsw-text-secondary);
+  border-radius: 6px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 6px 10px;
+  display: flex;
+}
+
+.KwMa_G_search:focus-within {
+  border-color: var(--dsw-accent-default);
+  color: var(--dsw-text-primary);
+}
+
+.KwMa_G_search input {
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.KwMa_G_search input::placeholder {
+  color: var(--dsw-text-tertiary);
+}
+
+.KwMa_G_visuallyHidden {
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.KwMa_G_count {
+  color: var(--dsw-text-tertiary);
+  margin: 0 0 12px;
+  font-size: 12px;
+}
+
+.KwMa_G_empty {
+  text-align: center;
+  color: var(--dsw-text-tertiary);
+  margin: 24px 0;
+  font-size: 13px;
+}
+
+.KwMa_G_cards {
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.KwMa_G_card {
+  border: 1px solid var(--dsw-border-default);
+  background: var(--dsw-bg-primary);
+  border-radius: 8px;
+  padding: 12px 14px;
+  transition: border-color .15s;
+}
+
+.KwMa_G_card:hover {
+  border-color: var(--dsw-border-hover);
+}
+
+.KwMa_G_cardHeader {
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  display: flex;
+}
+
+.KwMa_G_pluginName {
+  color: var(--dsw-accent-default);
+  font-family: ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, monospace;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.KwMa_G_pluginName:hover {
+  text-decoration: underline;
+}
+
+.KwMa_G_categoryTag {
+  background: var(--dsw-bg-secondary);
+  color: var(--dsw-text-tertiary);
+  white-space: nowrap;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 11px;
+}
+
+.KwMa_G_description {
+  color: var(--dsw-text-secondary);
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.KwMa_G_cardFooter {
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.KwMa_G_meta {
+  color: var(--dsw-text-tertiary);
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  display: flex;
+}
+
+.KwMa_G_dot {
+  opacity: .5;
+}
+
+.KwMa_G_installButton {
+  border: 1px solid var(--dsw-accent-default);
+  color: var(--dsw-accent-default);
+  cursor: pointer;
+  background: none;
+  border-radius: 5px;
+  flex-shrink: 0;
+  padding: 4px 12px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: background .15s, color .15s;
+}
+
+.KwMa_G_installButton:hover {
+  background: var(--dsw-accent-default);
+  color: #fff;
+}
+
+.KwMa_G_installButton[data-copied="true"] {
+  background: var(--dsw-accent-default);
+  color: #fff;
+  cursor: default;
+}
