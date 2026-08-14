@@ -1,0 +1,5 @@
+# dsh-plugin-marketplace bundle patch — inserts the community plugin
+# marketplace into the profile as a Cordis plugin row.
+- insert:
+    - id: plugin-marketplace
+      name: dsh-plugin-marketplace

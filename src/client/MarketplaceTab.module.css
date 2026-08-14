@@ -1,0 +1,25 @@
+.section { padding: 0 0 24px; }
+.title { margin: 0 0 4px; font-size: 18px; font-weight: 600; line-height: 1.4; color: var(--dsw-text-primary); }
+.intro { margin: 0 0 16px; font-size: 13px; line-height: 1.5; color: var(--dsw-text-secondary); }
+.categories { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.search { display: flex; align-items: center; gap: 8px; padding: 6px 10px; margin-bottom: 12px; border: 1px solid var(--dsw-border-default); border-radius: 6px; background: var(--dsw-bg-secondary); color: var(--dsw-text-secondary); }
+.search:focus-within { border-color: var(--dsw-accent-default); color: var(--dsw-text-primary); }
+.search input { flex: 1; border: none; outline: none; background: transparent; font-size: 13px; color: inherit; font-family: inherit; }
+.search input::placeholder { color: var(--dsw-text-tertiary); }
+.visuallyHidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.count { margin: 0 0 12px; font-size: 12px; color: var(--dsw-text-tertiary); }
+.empty { margin: 24px 0; text-align: center; font-size: 13px; color: var(--dsw-text-tertiary); }
+.cards { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.card { padding: 12px 14px; border: 1px solid var(--dsw-border-default); border-radius: 8px; background: var(--dsw-bg-primary); transition: border-color 0.15s; }
+.card:hover { border-color: var(--dsw-border-hover); }
+.cardHeader { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.pluginName { font-size: 14px; font-weight: 600; color: var(--dsw-accent-default); text-decoration: none; font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace; }
+.pluginName:hover { text-decoration: underline; }
+.categoryTag { font-size: 11px; padding: 1px 6px; border-radius: 4px; background: var(--dsw-bg-secondary); color: var(--dsw-text-tertiary); white-space: nowrap; }
+.description { margin: 0 0 10px; font-size: 13px; line-height: 1.5; color: var(--dsw-text-secondary); }
+.cardFooter { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.meta { display: flex; align-items: center; gap: 4px; font-size: 11px; color: var(--dsw-text-tertiary); }
+.dot { opacity: 0.5; }
+.installButton { flex-shrink: 0; padding: 4px 12px; border: 1px solid var(--dsw-accent-default); border-radius: 5px; background: transparent; color: var(--dsw-accent-default); font-size: 12px; font-weight: 500; font-family: inherit; cursor: pointer; transition: background 0.15s, color 0.15s; line-height: 1.5; }
+.installButton:hover { background: var(--dsw-accent-default); color: #fff; }
+.installButton[data-copied='true'] { background: var(--dsw-accent-default); color: #fff; cursor: default; }
