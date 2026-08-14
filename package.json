@@ -33,8 +33,7 @@
   },
   "scripts": {
     "build": "tsdown",
-    "watch": "tsdown --watch",
-    "prepare": "tsdown"
+    "watch": "tsdown --watch"
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": ">=0.1.0-rc.0",
